@@ -30,10 +30,10 @@ public class Board {
             for(int j=1;j<11;j++){
                 c=10*i+j;
                 if(Snakes.containsKey(c)){
-                    System.out.print("|go->"+Snakes.get(c)+t.sp(n-(Snakes.get(c)/10+1))+"|");
+                    System.out.print("|go->"+Snakes.get(c)+t.sp(n-((Snakes.get(c)+"").length()))+"|");
                 }
                 else if(Ladders.containsKey(c)){
-                    System.out.print("|go->"+Ladders.get(c)+t.sp(n-(Ladders.get(c)/10+1))+"|");
+                    System.out.print("|go->"+Ladders.get(c)+t.sp(n-((Ladders.get(c)+"").length()))+"|");
                 }
                 else{
                     System.out.print("|    "+t.sp(n)+"|");
